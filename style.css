@@ -1,6 +1,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: #272829;
+
 }
 
 a {
@@ -201,3 +202,10 @@ h6 {
 .mobile-nav-active #header {
     left: 0;
 }
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("./158015189.jfif") top center;
+    background-size: cover;
+  }

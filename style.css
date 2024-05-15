@@ -23,39 +23,7 @@ h6 {
     font-family: "Raleway", sans-serif;
 }
 
-/* Back to top button */
-
-.back-to-top {
-    position: fixed;
-    visibility: hidden;
-    opacity: 0;
-    right: 15px;
-    bottom: 15px;
-    z-index: 996;
-    background: #149ddd;
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    transition: all 0.4s;
-}
-
-.back-to-top i {
-    font-size: 28px;
-    color: #fff;
-    line-height: 0;
-}
-
-.back-to-top:hover {
-    background: #2eafec;
-    color: #fff;
-}
-
-.back-to-top.active {
-    visibility: visible;
-    opacity: 1;
-}
-
-/* Header */
+/* Header --------------------------------------------*/
 
 #header {
     position: fixed;
@@ -83,7 +51,6 @@ h6 {
     margin: 0;
     padding: 0;
     font-weight: 600;
-    -moz-text-align-last: center;
     text-align-last: center;
     font-family: "Poppins", sans-serif;
 }
@@ -173,10 +140,29 @@ h6 {
     color: #149ddd;
 }
 
-/* Mobile Navigation */
+@media (max-width: 1199px) {
+    #header {
+        left: -300px;
+    }
+
+    #main {
+        margin-left: 0;
+    }
+
+    .container,
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 12px;
+    }
+}
+
+
+
+/* Mobile Navigation -------------------------------------*/
+
 .mobile-nav-toggle {
     position: fixed;
-    right: 15px;
+    right: 38px;
     top: 15px;
     z-index: 9998;
     border: 0;
@@ -203,9 +189,111 @@ h6 {
     left: 0;
 }
 
+/* Hero Section -------------------------------------------*/
+
 #hero {
     width: 100%;
     height: 100vh;
     background: url("./158015189.jfif") top center;
     background-size: cover;
-  }
+}
+
+#hero:before {
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#hero .hero-container {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+}
+
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+}
+
+#hero p {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+}
+
+#hero p span {
+    color: #fff;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #149ddd;
+}
+
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Skill Section --------------------------------------------*/
+
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+
+.skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+}
+
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+    background: #dce8f8;
+    height: 10px;
+}
+
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background-color: #149ddd;
+}
+
+#skills {
+    margin-top: 100px !important;
+    background-color: #2728299f !important;
+    padding: 10px !important;
+}

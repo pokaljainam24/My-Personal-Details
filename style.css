@@ -1,7 +1,6 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: #000000;
-    font-weight: bold;
     font-weight: 500 !important;
 }
 
@@ -22,62 +21,27 @@ h4,
 h5,
 h6 {
     font-family: "Raleway", sans-serif;
+    color: #ffbb00 !important;
 }
 
 /* Main Body -----------------------------------------*/
 
-.intro,
-.title {
-    text-align: center;
-}
-
-*,
-::after,
-::before {
-    box-sizing: border-box;
-}
-
-.title {
-    position: relative;
-    height: 160px;
-    line-height: 230px;
-}
-
-
-@media only screen and (min-width:768px) {
-    .title {
-        line-height: 250px;
-    }
-}
-
-@media only screen and (min-width:1170px) {
-    .title {
-        height: 200px;
-        line-height: 300px;
-    }
-
-    .title h1 {
-        font-size: 3rem;
-    }
-}
-
 .ah-headline {
-    font-size: 3rem;
-    line-height: 1.2;
+    font-size: 2rem !important;
+}
+
+@media only screen and (min-width:1400px) {
+    .ah-headline {
+        font-size: 3rem !important;
+    }
 }
 
 @media only screen and (min-width:768px) {
     .ah-headline {
-        font-size: 4.4rem;
-        font-weight: 300;
+        font-size: 2rem !important;
     }
 }
 
-@media only screen and (min-width:1170px) {
-    .ah-headline {
-        font-size: 6rem;
-    }
-}
 
 /* Header --------------------------------------------*/
 
@@ -175,7 +139,7 @@ h6 {
 }
 
 .nav-menu a i,
-.nav-menu a:focus i {
+.nav-menu a i {
     font-size: 24px;
     padding-right: 8px;
     color: #6f7180;
@@ -183,15 +147,13 @@ h6 {
 
 .nav-menu a:hover,
 .nav-menu .active,
-.nav-menu .active:focus,
 .nav-menu li:hover>a {
     text-decoration: none;
-    color: #fff;
+    color: #33ff00;
 }
 
 .nav-menu a:hover i,
 .nav-menu .active i,
-.nav-menu .active:focus i,
 .nav-menu li:hover>a i {
     color: #149ddd;
 }
@@ -250,7 +212,9 @@ h6 {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("./158015189.jfif") top center;
+    background-image: url(./images/IMG_20240117_080212_455.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -328,7 +292,7 @@ h6 {
     display: block;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
-    color: #ffffff;
+    color: aqua !important;
 }
 
 .skills .progress .skill .val {
@@ -438,7 +402,7 @@ h6 {
     background: #fff;
     border-radius: 50px;
     padding: 2px 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 .portfolio #portfolio-flters li {
@@ -532,7 +496,7 @@ h6 {
 
 /* Testimonials css ---------------------------------------*/
 
-#testimonials{
+#testimonials {
     margin-top: 100px !important;
 }
 
@@ -582,4 +546,210 @@ h6 {
     position: absolute;
     bottom: -20px;
     left: calc(50% - 20px);
+}
+
+/* Contact Section ------------------------------------------*/
+
+.contact {
+    padding-bottom: 130px;
+    margin-top: 100px !important;
+    background-color: #2728299f !important;
+}
+
+.contact .info {
+    padding: 30px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .info i {
+    font-size: 20px;
+    color: #149ddd;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #dff3fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #050d18;
+}
+
+.contact .info p {
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #173b6c;
+}
+
+.contact .info .email p {
+    padding-top: 5px;
+}
+
+.contact .info .social-links {
+    padding-left: 60px;
+}
+
+.contact .info .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+}
+
+.contact .info .social-links a:hover {
+    background: #149ddd;
+    color: #fff;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+    background: #149ddd;
+    color: #fff;
+}
+
+.contact .php-email-form {
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .php-email-form .form-group {
+    padding-bottom: 8px;
+}
+
+.contact .php-email-form .validate {
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+    margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+}
+
+.contact .php-email-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact .php-email-form label {
+    padding-bottom: 8px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.contact .php-email-form input {
+    height: 44px;
+}
+
+.contact .php-email-form textarea {
+    padding: 10px 15px;
+}
+
+.contact .php-email-form button[type=submit] {
+    background: #149ddd;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+    background: #37b3ed;
+}
+
+/* Footer Section --------------------------------------------*/
+
+#footer {
+    padding: 15px;
+    color: #f4f6fd;
+    font-size: 14px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 9999;
+    background: #040b14;
+}
+
+#footer .copyright {
+    text-align: center;
+}
+
+#footer .credits {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: #eaebf0;
+}
+
+@media (max-width: 1199px) {
+    #footer {
+        position: static;
+        width: auto;
+        padding-right: 20px 15px;
+    }
 }
